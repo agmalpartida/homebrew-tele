@@ -5,20 +5,20 @@
 class Tele < Formula
   desc "TUI Telegram client"
   homepage "https://github.com/sorokin-vladimir/tele"
-  version "0.2.20"
+  version "0.2.21"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.20/tele_darwin_amd64.tar.gz"
-      sha256 "068783fb10ffa06aad45732f43ef2c3406671137cc0ff4a620f43bbbe9d083ee"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.21/tele_darwin_amd64.tar.gz"
+      sha256 "3f8804e7d177440d08026a607963b0977ca272ad4fa0d8eae0cd1453056903b5"
 
       define_method(:install) do
         bin.install "tele"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.20/tele_darwin_arm64.tar.gz"
-      sha256 "2c75e86a528eccd1d285d1330815f32d489b920fb9faa44a78752115c1d8655d"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.21/tele_darwin_arm64.tar.gz"
+      sha256 "4e5f7d41ae571dda01aafda02ac84160fd5e95fd49ce915d9fb2f63b56151942"
 
       define_method(:install) do
         bin.install "tele"
@@ -28,15 +28,15 @@ class Tele < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.20/tele_linux_amd64.tar.gz"
-      sha256 "b690115e6b9b074f306df62be8955782d134a4f47d6c64fc7ecd1364897f66a9"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.21/tele_linux_amd64.tar.gz"
+      sha256 "6326bbce8e59b8fcbde043a6e837cc1aa2651e140e28d2e298d529dd74ad38bb"
       define_method(:install) do
         bin.install "tele"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.20/tele_linux_arm64.tar.gz"
-      sha256 "ff8d1d75531c327c047108fd396e284cb75983c56cb2b2834366b8c62090720f"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v0.2.21/tele_linux_arm64.tar.gz"
+      sha256 "923d9d8028b5fe3c71177b4763d825d9fff2716bfe94aa7252c57812dce22a0b"
       define_method(:install) do
         bin.install "tele"
       end
