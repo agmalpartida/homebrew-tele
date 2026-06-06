@@ -1,11 +1,11 @@
 # homebrew-tele
 
-Homebrew tap for [tele](https://github.com/sorokin-vladimir/tele) — keyboard-driven TUI Telegram client.
+Homebrew tap for [tele](https://github.com/agmalpartida/tele) — keyboard-driven TUI Telegram client.
 
 ## Install
 
 ```sh
-brew tap sorokin-vladimir/tele
+brew tap agmalpartida/tele
 brew install tele
 ```
 
@@ -19,5 +19,5 @@ brew upgrade tele
 
 ```sh
 brew uninstall tele
-brew untap sorokin-vladimir/tele
+brew untap agmalpartida/tele
 ```
