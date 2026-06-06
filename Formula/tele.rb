@@ -18,7 +18,7 @@ class Tele < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.7/tele_darwin_arm64.tar.gz"
-      sha256 "ad5f3b186483dc0c0d34bc75992ba474b1b681df5ec96fc717e8f6a18804cf25"
+      sha256 "9a8de7de90a72caa6ab3f1e42c2b4ee7673341e6bfdd168f64dac1d66f2e8316"
 
       define_method(:install) do
         bin.install "tele"
