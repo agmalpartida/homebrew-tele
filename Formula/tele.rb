@@ -9,16 +9,16 @@ class Tele < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_darwin_amd64.tar.gz"
-      sha256 "71da2970c33a53e6f29f6db5d211c21892408ba92eb9e67d32cfc6cfada1affb"
+      url "https://github.com/agmalpartida/tele/releases/download/v1.0.9/tele_darwin_amd64.tar.gz"
+      sha256 "07be2c68ee08dc1d3c5ef077cec09bd00b878915c864e34e1fc7131939867b82"
 
       define_method(:install) do
         bin.install "tele"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_darwin_arm64.tar.gz"
-      sha256 "bab621f7944e90df941eaa3e6d72a40741504218564fb0dba64c5dc048603266"
+      url "https://github.com/agmalpartida/tele/releases/download/v1.0.9/tele_darwin_arm64.tar.gz"
+      sha256 "455bcea995112558a9c0ad463a50166f54b2f795c8015124ddd4f39751689307"
 
       define_method(:install) do
         bin.install "tele"
@@ -28,15 +28,15 @@ class Tele < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_linux_amd64.tar.gz"
-      sha256 "c6eea6bb8150188c75598ed2b175e10354b541a34a688bf9f24527062273b6b8"
+      url "https://github.com/agmalpartida/tele/releases/download/v1.0.9/tele_linux_amd64.tar.gz"
+      sha256 "aa03a1987b48e4424d19e8ded40f51dc19908eb237a31f7d1a4dccd181281094"
       define_method(:install) do
         bin.install "tele"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_linux_arm64.tar.gz"
-      sha256 "c965677a5170e7ab7accb6476842113dc2c0e8f69b0191519d360cae968de7dc"
+      url "https://github.com/agmalpartida/tele/releases/download/v1.0.9/tele_linux_arm64.tar.gz"
+      sha256 "05e20b6c92d7043422eb443461358049683c43b72cbd9f43095a8ced37f724d2"
       define_method(:install) do
         bin.install "tele"
       end
