@@ -18,7 +18,7 @@ class Tele < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_darwin_arm64.tar.gz"
-      sha256 "sha256:3a7ad8d06232f7052d483f524511fe02e8838d321c5255c6e73da74521532e0e"
+      sha256 "sha256:08ee76a7c77df6d56a457898e38a3624866682091c0f1140b0aa42300844e884"
 
       define_method(:install) do
         bin.install "tele"
@@ -29,14 +29,14 @@ class Tele < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_linux_amd64.tar.gz"
-      sha256 "sha256:237d480318d0cfff6a74b0a0f96bde9ea5e8032efea72ec648a20b7734a8f1c4"
+      sha256 "sha256:189ff38422c604831c9dac167f9cdd1b74dbd6afaf3a8351ebf84445ab835857"
       define_method(:install) do
         bin.install "tele"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_linux_arm64.tar.gz"
-      sha256 "sha256:237d480318d0cfff6a74b0a0f96bde9ea5e8032efea72ec648a20b7734a8f1c4"
+      sha256 "sha256:e29b81bad5de37fb3b0bd3d37b5ed355f0283809d16792427fbef475b1f542b8"
       define_method(:install) do
         bin.install "tele"
       end
