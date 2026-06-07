@@ -5,12 +5,12 @@
 class Tele < Formula
   desc "TUI Telegram client"
   homepage "https://github.com/agmalpartida/tele"
-  version "1.0.8"
+  version "1.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_darwin_amd64.tar.gz"
-      sha256 "f6d6b5b3284261b0ab75ac394460bbaa26df823ffaa08d95b6014c2f36b682d4"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
       define_method(:install) do
         bin.install "tele"
@@ -18,7 +18,7 @@ class Tele < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_darwin_arm64.tar.gz"
-      sha256 "08ee76a7c77df6d56a457898e38a3624866682091c0f1140b0aa42300844e884"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
       define_method(:install) do
         bin.install "tele"
@@ -29,14 +29,14 @@ class Tele < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_linux_amd64.tar.gz"
-      sha256 "189ff38422c604831c9dac167f9cdd1b74dbd6afaf3a8351ebf84445ab835857"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
       define_method(:install) do
         bin.install "tele"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/agmalpartida/tele/releases/download/v1.0.8/tele_linux_arm64.tar.gz"
-      sha256 "e29b81bad5de37fb3b0bd3d37b5ed355f0283809d16792427fbef475b1f542b8"
+      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
       define_method(:install) do
         bin.install "tele"
       end
